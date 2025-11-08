@@ -1,4 +1,7 @@
 # Libraries
+import dependencies
+dependencies.main()
+print("check complete, running main script...")
 import xml.etree.ElementTree as ET
 import os
 import xml.dom.minidom
@@ -369,3 +372,4 @@ os.makedirs("Output", exist_ok=True)
 pretty_xml = format_xml(root)
 with open('Output/Airspace.xml', 'w') as f:
     f.write(pretty_xml)
+print("script completed")
